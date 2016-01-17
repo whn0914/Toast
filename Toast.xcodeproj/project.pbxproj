@@ -15,6 +15,12 @@
 		A3EF0D061C48F74400A70E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EF0D041C48F74400A70E1E /* LaunchScreen.storyboard */; };
 		A3EF0D111C48F74400A70E1E /* ToastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF0D101C48F74400A70E1E /* ToastTests.m */; };
 		A3EF0D1C1C48F74400A70E1E /* ToastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF0D1B1C48F74400A70E1E /* ToastUITests.m */; };
+		A3EF0D301C48F94D00A70E1E /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF0D2F1C48F94D00A70E1E /* ListViewController.m */; };
+		A3EF0D321C491CAF00A70E1E /* ListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EF0D311C491CAF00A70E1E /* ListViewCell.xib */; };
+		A3EF0D351C49465100A70E1E /* ListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF0D341C49465100A70E1E /* ListViewCell.m */; };
+		A3EF0D371C4A87A800A70E1E /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EF0D361C4A87A800A70E1E /* PostView.xib */; };
+		A3EF0D3A1C4A8C6700A70E1E /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF0D391C4A8C6700A70E1E /* PostViewController.m */; };
+		CED5579D75FAA00C7115EB30 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 086FEF1084FAC06CDADC6D98 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086FEF1084FAC06CDADC6D98 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EF0CF31C48F74400A70E1E /* Toast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EF0CF71C48F74400A70E1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A3EF0CF91C48F74400A70E1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +58,16 @@
 		A3EF0D171C48F74400A70E1E /* ToastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EF0D1B1C48F74400A70E1E /* ToastUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastUITests.m; sourceTree = "<group>"; };
 		A3EF0D1D1C48F74400A70E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3EF0D2E1C48F94D00A70E1E /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		A3EF0D2F1C48F94D00A70E1E /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		A3EF0D311C491CAF00A70E1E /* ListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewCell.xib; sourceTree = "<group>"; };
+		A3EF0D331C49465100A70E1E /* ListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewCell.h; sourceTree = "<group>"; };
+		A3EF0D341C49465100A70E1E /* ListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewCell.m; sourceTree = "<group>"; };
+		A3EF0D361C4A87A800A70E1E /* PostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
+		A3EF0D381C4A8C6700A70E1E /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		A3EF0D391C4A8C6700A70E1E /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		B7A562C5477951671ECAFCEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F3AE60C5521B61185FA59C45 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED5579D75FAA00C7115EB30 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CB2D26B8012A6A7A6A169F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3AE60C5521B61185FA59C45 /* Pods.debug.xcconfig */,
+				B7A562C5477951671ECAFCEA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A3EF0CEA1C48F74400A70E1E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,8 @@
 				A3EF0D0F1C48F74400A70E1E /* ToastTests */,
 				A3EF0D1A1C48F74400A70E1E /* ToastUITests */,
 				A3EF0CF41C48F74400A70E1E /* Products */,
+				4CB2D26B8012A6A7A6A169F0 /* Pods */,
+				C17760974C6754BFC91700F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +130,9 @@
 		A3EF0CF51C48F74400A70E1E /* Toast */ = {
 			isa = PBXGroup;
 			children = (
+				A3EF0D2D1C48F7D700A70E1E /* Model */,
+				A3EF0D2C1C48F7CB00A70E1E /* Controller */,
+				A3EF0D2A1C48F7BB00A70E1E /* View */,
 				A3EF0CF91C48F74400A70E1E /* AppDelegate.h */,
 				A3EF0CFA1C48F74400A70E1E /* AppDelegate.m */,
 				A3EF0CFC1C48F74400A70E1E /* ViewController.h */,
@@ -140,6 +172,43 @@
 			path = ToastUITests;
 			sourceTree = "<group>";
 		};
+		A3EF0D2A1C48F7BB00A70E1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3EF0D311C491CAF00A70E1E /* ListViewCell.xib */,
+				A3EF0D331C49465100A70E1E /* ListViewCell.h */,
+				A3EF0D341C49465100A70E1E /* ListViewCell.m */,
+				A3EF0D361C4A87A800A70E1E /* PostView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A3EF0D2C1C48F7CB00A70E1E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3EF0D2E1C48F94D00A70E1E /* ListViewController.h */,
+				A3EF0D2F1C48F94D00A70E1E /* ListViewController.m */,
+				A3EF0D381C4A8C6700A70E1E /* PostViewController.h */,
+				A3EF0D391C4A8C6700A70E1E /* PostViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A3EF0D2D1C48F7D700A70E1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C17760974C6754BFC91700F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				086FEF1084FAC06CDADC6D98 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3EF0D201C48F74400A70E1E /* Build configuration list for PBXNativeTarget "Toast" */;
 			buildPhases = (
+				20323C65BD6BB574E2534E68 /* Check Pods Manifest.lock */,
 				A3EF0CEF1C48F74400A70E1E /* Sources */,
 				A3EF0CF01C48F74400A70E1E /* Frameworks */,
 				A3EF0CF11C48F74400A70E1E /* Resources */,
+				643E8222DBF77F9E06E2AF63 /* Embed Pods Frameworks */,
+				1697BDD9D6CADE996A02D5DC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,7 +315,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EF0D321C491CAF00A70E1E /* ListViewCell.xib in Resources */,
 				A3EF0D061C48F74400A70E1E /* LaunchScreen.storyboard in Resources */,
+				A3EF0D371C4A87A800A70E1E /* PostView.xib in Resources */,
 				A3EF0D031C48F74400A70E1E /* Assets.xcassets in Resources */,
 				A3EF0D011C48F74400A70E1E /* Main.storyboard in Resources */,
 			);
@@ -265,6 +339,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1697BDD9D6CADE996A02D5DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20323C65BD6BB574E2534E68 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		643E8222DBF77F9E06E2AF63 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3EF0CEF1C48F74400A70E1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +394,9 @@
 			files = (
 				A3EF0CFE1C48F74400A70E1E /* ViewController.m in Sources */,
 				A3EF0CFB1C48F74400A70E1E /* AppDelegate.m in Sources */,
+				A3EF0D3A1C4A8C6700A70E1E /* PostViewController.m in Sources */,
+				A3EF0D351C49465100A70E1E /* ListViewCell.m in Sources */,
+				A3EF0D301C48F94D00A70E1E /* ListViewController.m in Sources */,
 				A3EF0CF81C48F74400A70E1E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +536,7 @@
 		};
 		A3EF0D211C48F74400A70E1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3AE60C5521B61185FA59C45 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Toast/Info.plist;
@@ -422,6 +548,7 @@
 		};
 		A3EF0D221C48F74400A70E1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A562C5477951671ECAFCEA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Toast/Info.plist;
@@ -498,6 +625,7 @@
 				A3EF0D221C48F74400A70E1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3EF0D231C48F74400A70E1E /* Build configuration list for PBXNativeTarget "ToastTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +634,7 @@
 				A3EF0D251C48F74400A70E1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3EF0D261C48F74400A70E1E /* Build configuration list for PBXNativeTarget "ToastUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +643,7 @@
 				A3EF0D281C48F74400A70E1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

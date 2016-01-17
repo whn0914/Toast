@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostViewController">
+            <connections>
+                <outlet property="textView" destination="UaO-5d-9ll" id="Oxj-0J-8Li"/>
+                <outlet property="view" destination="iN0-l3-epB" id="CM9-AY-EpG"/>
+                <outlet property="wordCountLabel" destination="Uj0-ZU-ucu" id="B6T-iF-YfB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCO-Kf-11Y">
+                    <rect key="frame" x="18" y="29" width="564" height="160"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UaO-5d-9ll">
+                            <rect key="frame" x="8" y="8" width="548" height="122.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="w9Y-vz-Ue3"/>
+                            </connections>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还剩 60 个字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uj0-ZU-ucu">
+                            <rect key="frame" x="8" y="138.5" width="64.5" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.97045466209999998" blue="0.37362008369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Uj0-ZU-ucu" secondAttribute="bottom" constant="8.5" id="2pc-Ji-XfC"/>
+                        <constraint firstItem="UaO-5d-9ll" firstAttribute="top" secondItem="WCO-Kf-11Y" secondAttribute="top" constant="8" id="K6Q-en-eIR"/>
+                        <constraint firstAttribute="height" constant="160" id="Str-Cu-MQy"/>
+                        <constraint firstAttribute="trailing" secondItem="UaO-5d-9ll" secondAttribute="trailing" constant="8" id="WuH-ae-v4D"/>
+                        <constraint firstItem="UaO-5d-9ll" firstAttribute="leading" secondItem="WCO-Kf-11Y" secondAttribute="leading" constant="8" id="YHm-ee-KtI"/>
+                        <constraint firstItem="Uj0-ZU-ucu" firstAttribute="top" secondItem="UaO-5d-9ll" secondAttribute="bottom" constant="8" id="q2G-ZQ-sGN"/>
+                        <constraint firstItem="Uj0-ZU-ucu" firstAttribute="leading" secondItem="UaO-5d-9ll" secondAttribute="leading" id="qor-QP-kXt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTL-Ld-kgd">
+                    <rect key="frame" x="18" y="188" width="564" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYc-o7-VaM">
+                            <rect key="frame" x="267" y="7.5" width="30" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="发送">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FKu-OK-otJ"/>
+                        <constraint firstItem="TYc-o7-VaM" firstAttribute="centerY" secondItem="PTL-Ld-kgd" secondAttribute="centerY" id="OcF-cU-M63"/>
+                        <constraint firstItem="TYc-o7-VaM" firstAttribute="centerX" secondItem="PTL-Ld-kgd" secondAttribute="centerX" id="zbK-hm-Rhv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-Oh-Fa6">
+                    <rect key="frame" x="233" y="540" width="135.5" height="52"/>
+                    <string key="text">Designed &amp; Developed by
+SHU
+NAONAN</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WCO-Kf-11Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="29" id="0Np-Wj-AcX"/>
+                <constraint firstAttribute="trailing" secondItem="WCO-Kf-11Y" secondAttribute="trailing" constant="18" id="IHU-dU-YWn"/>
+                <constraint firstItem="OWb-Oh-Fa6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ibx-8E-gNb"/>
+                <constraint firstItem="OWb-Oh-Fa6" firstAttribute="top" secondItem="PTL-Ld-kgd" secondAttribute="bottom" constant="312" id="Jey-R8-hfx"/>
+                <constraint firstAttribute="bottom" secondItem="OWb-Oh-Fa6" secondAttribute="bottom" constant="8" id="PrU-ap-Y1x"/>
+                <constraint firstItem="PTL-Ld-kgd" firstAttribute="top" secondItem="WCO-Kf-11Y" secondAttribute="bottom" constant="-1" id="ZEj-ov-zad"/>
+                <constraint firstItem="WCO-Kf-11Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="aWf-UM-24b"/>
+                <constraint firstItem="PTL-Ld-kgd" firstAttribute="width" secondItem="WCO-Kf-11Y" secondAttribute="width" id="dsl-L1-dxJ"/>
+                <constraint firstItem="PTL-Ld-kgd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fiT-9w-RC4"/>
+            </constraints>
+            <connections>
+                <action selector="backgroundTap:" destination="-1" eventType="touchDown" id="9eR-34-3zu"/>
+            </connections>
+        </view>
+    </objects>
+</document>

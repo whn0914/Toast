@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.mainColor = [UIColor colorWithRed:(float)255/255.0f green:(float)214/255.0f blue:0 alpha:1.0];
     return YES;
 }
 
