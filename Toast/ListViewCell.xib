@@ -16,9 +16,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feA-ex-ZVj">
-                        <rect key="frame" x="17" y="8" width="351" height="76"/>
+                        <rect key="frame" x="17" y="18" width="351" height="76"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqn-ys-muv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="335" translatesAutoresizingMaskIntoConstraints="NO" id="Mqn-ys-muv">
                                 <rect key="frame" x="8" y="8" width="335" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -48,14 +48,16 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXr-gH-TO4">
-                        <rect key="frame" x="17" y="83" width="175" height="40"/>
+                        <rect key="frame" x="17" y="93" width="175" height="40"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFd-Qc-x66">
                                 <rect key="frame" x="29" y="2.5" width="116.5" height="35"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bd-ow-c2N">
-                                        <rect key="frame" x="19" y="3" width="30" height="30"/>
-                                        <state key="normal" title="B"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bd-ow-c2N">
+                                        <rect key="frame" x="22" y="5" width="25" height="25"/>
+                                        <state key="normal" image="trumpet_white"/>
+                                        <state key="selected" image="trumpet_color"/>
+                                        <state key="highlighted" image="trumpet_color"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10个呐喊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgU-dc-d47">
                                         <rect key="frame" x="48" y="7" width="45.5" height="21"/>
@@ -65,13 +67,13 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="7bd-ow-c2N" firstAttribute="top" secondItem="rFd-Qc-x66" secondAttribute="top" constant="3" id="4YM-hp-D3R"/>
+                                    <constraint firstItem="7bd-ow-c2N" firstAttribute="top" secondItem="rFd-Qc-x66" secondAttribute="top" constant="5" id="4YM-hp-D3R"/>
                                     <constraint firstAttribute="trailing" secondItem="YgU-dc-d47" secondAttribute="trailing" constant="23" id="CLF-va-cEf"/>
                                     <constraint firstAttribute="bottom" secondItem="YgU-dc-d47" secondAttribute="bottom" constant="7" id="FSd-XK-J4P"/>
-                                    <constraint firstAttribute="bottom" secondItem="7bd-ow-c2N" secondAttribute="bottom" constant="2" id="Lqf-Ki-tnD"/>
-                                    <constraint firstItem="7bd-ow-c2N" firstAttribute="leading" secondItem="rFd-Qc-x66" secondAttribute="leading" constant="19" id="VDT-I9-jKe"/>
+                                    <constraint firstAttribute="bottom" secondItem="7bd-ow-c2N" secondAttribute="bottom" constant="5" id="Lqf-Ki-tnD"/>
+                                    <constraint firstItem="7bd-ow-c2N" firstAttribute="leading" secondItem="rFd-Qc-x66" secondAttribute="leading" constant="22" id="VDT-I9-jKe"/>
                                     <constraint firstItem="YgU-dc-d47" firstAttribute="top" secondItem="rFd-Qc-x66" secondAttribute="top" constant="7" id="VXu-YV-4bu"/>
-                                    <constraint firstItem="YgU-dc-d47" firstAttribute="leading" secondItem="7bd-ow-c2N" secondAttribute="trailing" constant="-1" id="v6n-Xg-xKi"/>
+                                    <constraint firstItem="YgU-dc-d47" firstAttribute="leading" secondItem="7bd-ow-c2N" secondAttribute="trailing" constant="1" id="v6n-Xg-xKi"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -86,14 +88,16 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gew-xt-zRs">
-                        <rect key="frame" x="191" y="83" width="177" height="40"/>
+                        <rect key="frame" x="191" y="93" width="177" height="40"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPC-5b-gOs">
                                 <rect key="frame" x="32" y="2.5" width="113.5" height="35"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEU-hh-2GG">
-                                        <rect key="frame" x="19" y="3" width="30" height="30"/>
-                                        <state key="normal" title="S"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEU-hh-2GG">
+                                        <rect key="frame" x="22" y="5" width="25" height="25"/>
+                                        <state key="normal" image="shit_white"/>
+                                        <state key="selected" image="shit_color"/>
+                                        <state key="highlighted" image="shit_color"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10个shit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-pU-9Qz">
                                         <rect key="frame" x="48" y="7" width="42.5" height="21"/>
@@ -103,13 +107,13 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="pEU-hh-2GG" secondAttribute="bottom" constant="2" id="F2j-u2-9C3"/>
+                                    <constraint firstAttribute="bottom" secondItem="pEU-hh-2GG" secondAttribute="bottom" constant="5" id="F2j-u2-9C3"/>
                                     <constraint firstAttribute="trailing" secondItem="Gqf-pU-9Qz" secondAttribute="trailing" constant="23" id="GLD-3O-og2"/>
-                                    <constraint firstItem="Gqf-pU-9Qz" firstAttribute="leading" secondItem="pEU-hh-2GG" secondAttribute="trailing" constant="-1" id="Iho-LK-zUT"/>
+                                    <constraint firstItem="Gqf-pU-9Qz" firstAttribute="leading" secondItem="pEU-hh-2GG" secondAttribute="trailing" constant="1" id="Iho-LK-zUT"/>
                                     <constraint firstItem="Gqf-pU-9Qz" firstAttribute="top" secondItem="JPC-5b-gOs" secondAttribute="top" constant="7" id="Ony-zJ-fEB"/>
                                     <constraint firstAttribute="bottom" secondItem="Gqf-pU-9Qz" secondAttribute="bottom" constant="7" id="Vii-xz-f5P"/>
-                                    <constraint firstItem="pEU-hh-2GG" firstAttribute="top" secondItem="JPC-5b-gOs" secondAttribute="top" constant="3" id="eYG-2b-ufS"/>
-                                    <constraint firstItem="pEU-hh-2GG" firstAttribute="leading" secondItem="JPC-5b-gOs" secondAttribute="leading" constant="19" id="re9-dj-Mol"/>
+                                    <constraint firstItem="pEU-hh-2GG" firstAttribute="top" secondItem="JPC-5b-gOs" secondAttribute="top" constant="5" id="eYG-2b-ufS"/>
+                                    <constraint firstItem="pEU-hh-2GG" firstAttribute="leading" secondItem="JPC-5b-gOs" secondAttribute="leading" constant="22" id="re9-dj-Mol"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -125,8 +129,8 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="AXr-gH-TO4" firstAttribute="leading" secondItem="feA-ex-ZVj" secondAttribute="leading" id="3Um-pT-FcT"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Gew-xt-zRs" secondAttribute="bottom" constant="5" id="652-uX-ryn"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="AXr-gH-TO4" secondAttribute="bottom" constant="5" id="7cB-Ob-fjY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Gew-xt-zRs" secondAttribute="bottom" constant="-5.5" id="652-uX-ryn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AXr-gH-TO4" secondAttribute="bottom" constant="-5.5" id="7cB-Ob-fjY"/>
                     <constraint firstItem="Gew-xt-zRs" firstAttribute="top" secondItem="feA-ex-ZVj" secondAttribute="bottom" constant="-1" id="AbN-Xv-P8H"/>
                     <constraint firstItem="feA-ex-ZVj" firstAttribute="centerX" secondItem="8gd-p0-EMT" secondAttribute="centerX" id="Bgy-Ro-1mw"/>
                     <constraint firstItem="Gew-xt-zRs" firstAttribute="trailing" secondItem="feA-ex-ZVj" secondAttribute="trailing" id="TwU-F8-Wj4"/>
@@ -135,7 +139,7 @@
                     <constraint firstItem="Gew-xt-zRs" firstAttribute="height" secondItem="AXr-gH-TO4" secondAttribute="height" id="mv6-9D-qiG"/>
                     <constraint firstItem="feA-ex-ZVj" firstAttribute="leading" secondItem="8gd-p0-EMT" secondAttribute="leadingMargin" constant="9" id="niX-jj-Khr"/>
                     <constraint firstItem="Gew-xt-zRs" firstAttribute="width" secondItem="AXr-gH-TO4" secondAttribute="width" constant="2" id="nja-Us-hiW"/>
-                    <constraint firstItem="feA-ex-ZVj" firstAttribute="top" secondItem="8gd-p0-EMT" secondAttribute="topMargin" id="yGj-Lz-BC1"/>
+                    <constraint firstItem="feA-ex-ZVj" firstAttribute="top" secondItem="8gd-p0-EMT" secondAttribute="topMargin" constant="10" id="yGj-Lz-BC1"/>
                     <constraint firstAttribute="trailingMargin" secondItem="feA-ex-ZVj" secondAttribute="trailing" constant="8" id="z44-tc-1Wg"/>
                 </constraints>
                 <variation key="default">
@@ -150,7 +154,13 @@
                 <outlet property="toastTimeLabel" destination="Eaz-iN-zQi" id="QB6-Tu-HZh"/>
                 <outlet property="zanNumLabel" destination="YgU-dc-d47" id="rTf-Xp-7JJ"/>
             </connections>
-            <point key="canvasLocation" x="369" y="324"/>
+            <point key="canvasLocation" x="370" y="245"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="shit_color" width="25" height="25"/>
+        <image name="shit_white" width="25" height="25"/>
+        <image name="trumpet_color" width="25" height="25"/>
+        <image name="trumpet_white" width="25" height="25"/>
+    </resources>
 </document>

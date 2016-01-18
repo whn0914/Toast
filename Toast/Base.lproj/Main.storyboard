@@ -29,7 +29,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="吐司" id="lLi-1T-khc" userLabel="吐司">
-                        <barButtonItem key="rightBarButtonItem" title="吐" id="VIx-zx-Im0">
+                        <barButtonItem key="rightBarButtonItem" image="add" id="VIx-zx-Im0">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="toast:" destination="y2D-0q-Jgd" id="gpk-EC-HdD"/>
                             </connections>
@@ -57,4 +58,7 @@
             <point key="canvasLocation" x="-697" y="154"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="25" height="25"/>
+    </resources>
 </document>

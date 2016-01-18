@@ -7,6 +7,7 @@
 //
 
 #import "PostViewController.h"
+#import "Utils.h"
 
 #define MAX_WORD_COUNT 60
 
@@ -58,8 +59,8 @@
     [super viewDidLoad];
     
     self.title = @"吐(cao)一下";
-    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelAction)];
-//    [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"cancel_black"] style:UIBarButtonItemStylePlain target:self action:@selector(cancelAction)];
+    //UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelAction)];
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"close"] style:UIBarButtonItemStylePlain target:self action:@selector(cancelAction)];
     cancelButton.tintColor = [UIColor blackColor];
     self.navigationItem.leftBarButtonItem = cancelButton;
     self.navigationController.navigationBar.translucent = NO;   // 避免导航栏变灰
@@ -78,6 +79,10 @@
 
 - (void)cancelAction {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)post:(id)sender {
+    [Utils showTextHud:self.view withText:@"吐槽成功"];
 }
 
 

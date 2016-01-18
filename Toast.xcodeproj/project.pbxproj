@@ -20,6 +20,7 @@
 		A3EF0D351C49465100A70E1E /* ListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF0D341C49465100A70E1E /* ListViewCell.m */; };
 		A3EF0D371C4A87A800A70E1E /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EF0D361C4A87A800A70E1E /* PostView.xib */; };
 		A3EF0D3A1C4A8C6700A70E1E /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF0D391C4A8C6700A70E1E /* PostViewController.m */; };
+		A3EF0D3E1C4CC03000A70E1E /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF0D3D1C4CC03000A70E1E /* Utils.m */; };
 		CED5579D75FAA00C7115EB30 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 086FEF1084FAC06CDADC6D98 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		A3EF0D361C4A87A800A70E1E /* PostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
 		A3EF0D381C4A8C6700A70E1E /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
 		A3EF0D391C4A8C6700A70E1E /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		A3EF0D3C1C4CC03000A70E1E /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		A3EF0D3D1C4CC03000A70E1E /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		B7A562C5477951671ECAFCEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F3AE60C5521B61185FA59C45 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +133,7 @@
 		A3EF0CF51C48F74400A70E1E /* Toast */ = {
 			isa = PBXGroup;
 			children = (
+				A3EF0D3B1C4CBFE300A70E1E /* Utils */,
 				A3EF0D2D1C48F7D700A70E1E /* Model */,
 				A3EF0D2C1C48F7CB00A70E1E /* Controller */,
 				A3EF0D2A1C48F7BB00A70E1E /* View */,
@@ -199,6 +203,15 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A3EF0D3B1C4CBFE300A70E1E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A3EF0D3C1C4CC03000A70E1E /* Utils.h */,
+				A3EF0D3D1C4CC03000A70E1E /* Utils.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		C17760974C6754BFC91700F0 /* Frameworks */ = {
@@ -279,6 +292,7 @@
 				TargetAttributes = {
 					A3EF0CF21C48F74400A70E1E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9V27GER7FD;
 					};
 					A3EF0D0B1C48F74400A70E1E = {
 						CreatedOnToolsVersion = 7.2;
@@ -397,6 +411,7 @@
 				A3EF0D3A1C4A8C6700A70E1E /* PostViewController.m in Sources */,
 				A3EF0D351C49465100A70E1E /* ListViewCell.m in Sources */,
 				A3EF0D301C48F94D00A70E1E /* ListViewController.m in Sources */,
+				A3EF0D3E1C4CC03000A70E1E /* Utils.m in Sources */,
 				A3EF0CF81C48F74400A70E1E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,10 +554,14 @@
 			baseConfigurationReference = F3AE60C5521B61185FA59C45 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Toast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zsns.Toast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -551,10 +570,14 @@
 			baseConfigurationReference = B7A562C5477951671ECAFCEA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Toast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zsns.Toast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
