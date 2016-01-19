@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *toastTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *zanNumLabel;
 @property (weak, nonatomic) IBOutlet UILabel *shitNumLabel;
+@property (weak, nonatomic) IBOutlet UIButton *trumpetButton;
+@property (weak, nonatomic) IBOutlet UIButton *shitButton;
 
 @end
 
@@ -55,4 +57,13 @@
         self.shitNumLabel.text = _shitText;
     }
 }
+
+- (IBAction)trumpet:(id)sender {
+    [self.trumpetButton setSelected:YES];
+}
+
+- (IBAction)shit:(id)sender {
+    [self.shitButton setSelected:YES];
+}
+
 @end

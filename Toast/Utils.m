@@ -54,4 +54,27 @@
     }];
 }
 
+/*!
+ * @brief 显示纯文本提示
+ * @param view 显示的View
+ * @param text 显示的文本
+ */
++ (void)showTextHudAndDismiss:(UIView *)view viewController:(UIViewController *)viewController withText:(NSString *)text {
+    MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithView:view];
+    [view addSubview:HUD];
+    HUD.labelText = text;
+    HUD.mode = MBProgressHUDModeText;
+    
+    //指定距离中心点的X轴和Y轴的偏移量，如果不指定则在屏幕中间显示
+    //    HUD.yOffset = 150.0f;
+    //    HUD.xOffset = 100.0f;
+    
+    [HUD showAnimated:YES whileExecutingBlock:^{
+        sleep(1);
+    } completionBlock:^{
+        [HUD removeFromSuperview];
+        [viewController dismissViewControllerAnimated:YES completion:nil];
+    }];
+}
+
 @end

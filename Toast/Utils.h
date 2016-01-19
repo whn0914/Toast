@@ -12,4 +12,5 @@
 @interface Utils : NSObject
 + (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
 + (void)showTextHud:(UIView *)view withText:(NSString *)text;
++ (void)showTextHudAndDismiss:(UIView *)view viewController:(UIViewController *)viewController withText:text;
 @end

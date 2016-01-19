@@ -7,6 +7,8 @@
 //
 
 #import "PostViewController.h"
+#import "TopRequest.h"
+#import "ToastRequest.h"
 #import "Utils.h"
 
 #define MAX_WORD_COUNT 60
@@ -40,6 +42,9 @@
 
 - (void)textViewDidChange:(UITextView *)textView {
     NSInteger wordCountLeft = MAX_WORD_COUNT - [self.textView.text length];
+    if(wordCountLeft <=0){
+        wordCountLeft = 0;
+    }
     self.wordCountLabel.text = [[NSString alloc] initWithFormat:@"还剩 %ld 字", (long)wordCountLeft];
 }
 
@@ -82,7 +87,29 @@
 }
 
 - (IBAction)post:(id)sender {
-    [Utils showTextHud:self.view withText:@"吐槽成功"];
+    if([self.textView.text length] > MAX_WORD_COUNT) {
+        [Utils showTextHud:self.view withText:[[NSString alloc] initWithFormat: @"字数不能多于 %d 字", MAX_WORD_COUNT]];
+    }
+    else if([self.textView.text length] > 0 && [self.textView.textColor isEqual:[UIColor blackColor]]) {
+        NSString *uid = [ToastRequest toastUidPreProcess];
+        if(uid == nil) {
+            [Utils showTextHud:self.view withText:@"网络出错"];
+        }
+        else {
+            NSString *url = [API_BASE_URL stringByAppendingString:TOAST];
+            NSDictionary *params = @{@"body":self.textView.text, @"uid":uid};
+            BOOL res = [TopRequest execute:url params:params callback:^(ResponseBody *response){
+                if(response.error == nil && [response.code intValue] == 1) {
+                    [Utils showTextHudAndDismiss:self.view viewController:self withText:@"吐槽成功"];
+                } else {
+                    [Utils showTextHud:self.view withText:@"服务器出错，吐槽失败QAQ"];
+                }
+            }];
+            if(!res) {
+                [Utils showTextHud:self.view withText:@"网络出错"];
+            }
+        }
+    }
 }
 
 

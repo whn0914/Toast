@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F204B5894A1F444909C2E700298CB2AE6B7122FF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F204B5894A1F444909C2E700298CB2AE6B7122FF" : 0,
+    "128D52A6BFB308B8EC89CDAC6B3A7294821C396A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9EC0FBCD-62AB-45CB-91B4-06B22D777307",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F204B5894A1F444909C2E700298CB2AE6B7122FF" : "Toast\/",
+    "128D52A6BFB308B8EC89CDAC6B3A7294821C396A" : "AFNTop\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Toast",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Toast.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/whn0914\/AFNTop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "128D52A6BFB308B8EC89CDAC6B3A7294821C396A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/whn0914\/Toast.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F204B5894A1F444909C2E700298CB2AE6B7122FF"
+    }
+  ]
+}

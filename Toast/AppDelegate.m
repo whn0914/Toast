@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ToastRequest.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.mainColor = [UIColor colorWithRed:(float)255/255.0f green:(float)214/255.0f blue:0 alpha:1.0];
-    [NSThread sleepForTimeInterval:2.0];//设置启动页面时间
+    // 检查用户是否已经有TOAST_UID
+    NSLog(@"TOAST_UID: %@", [ToastRequest toastUidPreProcess]);
+    [NSThread sleepForTimeInterval:1.0];//设置启动页面时间
     return YES;
 }
 

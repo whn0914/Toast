@@ -21,7 +21,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="335" translatesAutoresizingMaskIntoConstraints="NO" id="Mqn-ys-muv">
                                 <rect key="frame" x="8" y="8" width="335" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="2015-11-12 12:21:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eaz-iN-zQi">
@@ -58,11 +58,14 @@
                                         <state key="normal" image="trumpet_white"/>
                                         <state key="selected" image="trumpet_color"/>
                                         <state key="highlighted" image="trumpet_color"/>
+                                        <connections>
+                                            <action selector="trumpet:" destination="4h9-ha-436" eventType="touchUpInside" id="clF-tz-WWs"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10个呐喊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgU-dc-d47">
                                         <rect key="frame" x="48" y="7" width="45.5" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -98,11 +101,14 @@
                                         <state key="normal" image="shit_white"/>
                                         <state key="selected" image="shit_color"/>
                                         <state key="highlighted" image="shit_color"/>
+                                        <connections>
+                                            <action selector="shit:" destination="4h9-ha-436" eventType="touchUpInside" id="Oto-3q-vjI"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10个shit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-pU-9Qz">
                                         <rect key="frame" x="48" y="7" width="42.5" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -149,9 +155,11 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
+                <outlet property="shitButton" destination="pEU-hh-2GG" id="EUv-fa-72V"/>
                 <outlet property="shitNumLabel" destination="Gqf-pU-9Qz" id="bTA-yG-jWv"/>
                 <outlet property="toastTextLabel" destination="Mqn-ys-muv" id="7Nd-8v-0kY"/>
                 <outlet property="toastTimeLabel" destination="Eaz-iN-zQi" id="QB6-Tu-HZh"/>
+                <outlet property="trumpetButton" destination="7bd-ow-c2N" id="auj-5d-uzf"/>
                 <outlet property="zanNumLabel" destination="YgU-dc-d47" id="rTf-Xp-7JJ"/>
             </connections>
             <point key="canvasLocation" x="370" y="245"/>
