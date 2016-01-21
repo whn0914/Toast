@@ -155,11 +155,11 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="shitButton" destination="pEU-hh-2GG" id="EUv-fa-72V"/>
+                <outlet property="shitButton" destination="pEU-hh-2GG" id="P7g-9u-iFh"/>
                 <outlet property="shitNumLabel" destination="Gqf-pU-9Qz" id="bTA-yG-jWv"/>
                 <outlet property="toastTextLabel" destination="Mqn-ys-muv" id="7Nd-8v-0kY"/>
                 <outlet property="toastTimeLabel" destination="Eaz-iN-zQi" id="QB6-Tu-HZh"/>
-                <outlet property="trumpetButton" destination="7bd-ow-c2N" id="auj-5d-uzf"/>
+                <outlet property="trumpetButton" destination="7bd-ow-c2N" id="aQb-6t-F5F"/>
                 <outlet property="zanNumLabel" destination="YgU-dc-d47" id="rTf-Xp-7JJ"/>
             </connections>
             <point key="canvasLocation" x="370" y="245"/>

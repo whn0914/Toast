@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ListViewController : UITableViewController <UITableViewDataSource>
-
+- (void)reloadCellData:(id)sender;
 @end

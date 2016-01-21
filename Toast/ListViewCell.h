@@ -13,4 +13,7 @@
 @property (copy, nonatomic) NSString *toastTime;
 @property (copy, nonatomic) NSString *zanText;
 @property (copy, nonatomic) NSString *shitText;
+@property (copy, nonatomic) NSString *toastId;
+@property (weak, nonatomic) IBOutlet UIButton *trumpetButton;
+@property (weak, nonatomic) IBOutlet UIButton *shitButton;
 @end

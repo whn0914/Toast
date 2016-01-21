@@ -11,10 +11,18 @@
 
 #define REQUEST_CALLBACK void (^)(ResponseBody *response)
 
-#define API_BASE_URL @"http://localhost:5000"
+#define API_BASE_URL @"http://192.168.0.136:5000"
 
 #define ADD_USER @"/addUser"
 
 #define TOAST @"/toast"
+
+#define LIST_TOASTS @"/listToasts"
+
+#define TRUMPET @"/trumpet"
+
+#define SHIT @"/shit"
+
+#define GET_TOAST @"/getToast"
 
 #endif /* URIDefine_h */
