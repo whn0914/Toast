@@ -16,8 +16,6 @@
 @interface ListViewCell ()
 @property (weak, nonatomic) IBOutlet UILabel *toastTextLabel;
 @property (weak, nonatomic) IBOutlet UILabel *toastTimeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *zanNumLabel;
-@property (weak, nonatomic) IBOutlet UILabel *shitNumLabel;
 @end
 
 @implementation ListViewCell
@@ -49,14 +47,14 @@
 - (void)setZanText:(NSString *)zanText {
     if(![zanText isEqualToString:_zanText]) {
         _zanText = [zanText copy];
-        self.zanNumLabel.text = [[NSString alloc] initWithFormat:@"%@ 个呐喊", _zanText];
+        [self.trumpetButton setTitle:[[NSString alloc] initWithFormat:@"%@ 个呐喊", _zanText] forState:UIControlStateNormal];
     }
 }
 
 - (void)setShitText:(NSString *)shitText {
     if(![shitText isEqualToString:_shitText]) {
         _shitText = [shitText copy];
-        self.shitNumLabel.text = [[NSString alloc] initWithFormat:@"%@ 个shit", _shitText];
+        [self.shitButton setTitle:[[NSString alloc] initWithFormat:@"%@ 个shit", _shitText] forState:UIControlStateNormal];
     }
 }
 

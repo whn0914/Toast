@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="2015-11-12 12:21:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eaz-iN-zQi">
-                                <rect key="frame" x="8" y="33.5" width="106.5" height="35"/>
+                                <rect key="frame" x="8" y="33" width="107" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -50,83 +50,60 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXr-gH-TO4">
                         <rect key="frame" x="17" y="93" width="175" height="40"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFd-Qc-x66">
-                                <rect key="frame" x="29" y="2.5" width="116.5" height="35"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bd-ow-c2N">
-                                        <rect key="frame" x="22" y="5" width="25" height="25"/>
-                                        <state key="normal" image="trumpet_white"/>
-                                        <state key="selected" image="trumpet_color"/>
-                                        <state key="highlighted" image="trumpet_color"/>
-                                        <connections>
-                                            <action selector="trumpet:" destination="4h9-ha-436" eventType="touchUpInside" id="clF-tz-WWs"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10个呐喊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgU-dc-d47">
-                                        <rect key="frame" x="48" y="7" width="45.5" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="7bd-ow-c2N" firstAttribute="top" secondItem="rFd-Qc-x66" secondAttribute="top" constant="5" id="4YM-hp-D3R"/>
-                                    <constraint firstAttribute="trailing" secondItem="YgU-dc-d47" secondAttribute="trailing" constant="23" id="CLF-va-cEf"/>
-                                    <constraint firstAttribute="bottom" secondItem="YgU-dc-d47" secondAttribute="bottom" constant="7" id="FSd-XK-J4P"/>
-                                    <constraint firstAttribute="bottom" secondItem="7bd-ow-c2N" secondAttribute="bottom" constant="5" id="Lqf-Ki-tnD"/>
-                                    <constraint firstItem="7bd-ow-c2N" firstAttribute="leading" secondItem="rFd-Qc-x66" secondAttribute="leading" constant="22" id="VDT-I9-jKe"/>
-                                    <constraint firstItem="YgU-dc-d47" firstAttribute="top" secondItem="rFd-Qc-x66" secondAttribute="top" constant="7" id="VXu-YV-4bu"/>
-                                    <constraint firstItem="YgU-dc-d47" firstAttribute="leading" secondItem="7bd-ow-c2N" secondAttribute="trailing" constant="1" id="v6n-Xg-xKi"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bd-ow-c2N">
+                                <rect key="frame" x="8" y="8" width="159" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <state key="normal" title="0 个呐喊" image="trumpet_white">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="trumpet_color"/>
+                                <state key="highlighted" image="trumpet_color"/>
+                                <connections>
+                                    <action selector="trumpet:" destination="4h9-ha-436" eventType="touchUpInside" id="clF-tz-WWs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rFd-Qc-x66" firstAttribute="centerY" secondItem="AXr-gH-TO4" secondAttribute="centerY" id="5wm-Jt-xVR"/>
-                            <constraint firstItem="rFd-Qc-x66" firstAttribute="centerX" secondItem="AXr-gH-TO4" secondAttribute="centerX" id="HDu-nt-vk0"/>
+                            <constraint firstItem="7bd-ow-c2N" firstAttribute="centerX" secondItem="AXr-gH-TO4" secondAttribute="centerX" id="8Ww-iB-lgI"/>
+                            <constraint firstItem="7bd-ow-c2N" firstAttribute="leading" secondItem="AXr-gH-TO4" secondAttribute="leading" constant="8" id="Rpv-T4-bTj"/>
+                            <constraint firstItem="7bd-ow-c2N" firstAttribute="top" secondItem="AXr-gH-TO4" secondAttribute="top" constant="8" id="UqE-Zx-9mJ"/>
+                            <constraint firstItem="7bd-ow-c2N" firstAttribute="centerY" secondItem="AXr-gH-TO4" secondAttribute="centerY" id="d20-Gp-XLb"/>
+                            <constraint firstAttribute="bottom" secondItem="7bd-ow-c2N" secondAttribute="bottom" constant="8" id="sS6-Ov-eyJ"/>
+                            <constraint firstAttribute="trailing" secondItem="7bd-ow-c2N" secondAttribute="trailing" constant="8" id="vXp-Bf-tXc"/>
                             <constraint firstAttribute="height" constant="40" id="vlO-Kb-Uhg"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                         </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="d20-Gp-XLb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gew-xt-zRs">
                         <rect key="frame" x="191" y="93" width="177" height="40"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPC-5b-gOs">
-                                <rect key="frame" x="32" y="2.5" width="113.5" height="35"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEU-hh-2GG">
-                                        <rect key="frame" x="22" y="5" width="25" height="25"/>
-                                        <state key="normal" image="shit_white"/>
-                                        <state key="selected" image="shit_color"/>
-                                        <state key="highlighted" image="shit_color"/>
-                                        <connections>
-                                            <action selector="shit:" destination="4h9-ha-436" eventType="touchUpInside" id="Oto-3q-vjI"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10个shit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-pU-9Qz">
-                                        <rect key="frame" x="48" y="7" width="42.5" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="pEU-hh-2GG" secondAttribute="bottom" constant="5" id="F2j-u2-9C3"/>
-                                    <constraint firstAttribute="trailing" secondItem="Gqf-pU-9Qz" secondAttribute="trailing" constant="23" id="GLD-3O-og2"/>
-                                    <constraint firstItem="Gqf-pU-9Qz" firstAttribute="leading" secondItem="pEU-hh-2GG" secondAttribute="trailing" constant="1" id="Iho-LK-zUT"/>
-                                    <constraint firstItem="Gqf-pU-9Qz" firstAttribute="top" secondItem="JPC-5b-gOs" secondAttribute="top" constant="7" id="Ony-zJ-fEB"/>
-                                    <constraint firstAttribute="bottom" secondItem="Gqf-pU-9Qz" secondAttribute="bottom" constant="7" id="Vii-xz-f5P"/>
-                                    <constraint firstItem="pEU-hh-2GG" firstAttribute="top" secondItem="JPC-5b-gOs" secondAttribute="top" constant="5" id="eYG-2b-ufS"/>
-                                    <constraint firstItem="pEU-hh-2GG" firstAttribute="leading" secondItem="JPC-5b-gOs" secondAttribute="leading" constant="22" id="re9-dj-Mol"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEU-hh-2GG">
+                                <rect key="frame" x="8" y="8" width="161" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="0 个shit" image="shit_white">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="shit_color"/>
+                                <state key="highlighted" image="shit_color"/>
+                                <connections>
+                                    <action selector="shit:" destination="4h9-ha-436" eventType="touchUpInside" id="Oto-3q-vjI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JPC-5b-gOs" firstAttribute="centerY" secondItem="Gew-xt-zRs" secondAttribute="centerY" id="Www-8h-Tw2"/>
-                            <constraint firstItem="JPC-5b-gOs" firstAttribute="centerX" secondItem="Gew-xt-zRs" secondAttribute="centerX" id="hP8-fI-f4Q"/>
+                            <constraint firstItem="pEU-hh-2GG" firstAttribute="top" secondItem="Gew-xt-zRs" secondAttribute="top" constant="8" id="IGe-Xs-uTd"/>
+                            <constraint firstAttribute="bottom" secondItem="pEU-hh-2GG" secondAttribute="bottom" constant="8" id="MUh-8i-FyV"/>
+                            <constraint firstItem="pEU-hh-2GG" firstAttribute="leading" secondItem="Gew-xt-zRs" secondAttribute="leading" constant="8" id="YTV-Y2-Ebv"/>
+                            <constraint firstAttribute="trailing" secondItem="pEU-hh-2GG" secondAttribute="trailing" constant="8" id="ndH-gE-QqT"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
@@ -156,11 +133,9 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="shitButton" destination="pEU-hh-2GG" id="P7g-9u-iFh"/>
-                <outlet property="shitNumLabel" destination="Gqf-pU-9Qz" id="bTA-yG-jWv"/>
                 <outlet property="toastTextLabel" destination="Mqn-ys-muv" id="7Nd-8v-0kY"/>
                 <outlet property="toastTimeLabel" destination="Eaz-iN-zQi" id="QB6-Tu-HZh"/>
                 <outlet property="trumpetButton" destination="7bd-ow-c2N" id="aQb-6t-F5F"/>
-                <outlet property="zanNumLabel" destination="YgU-dc-d47" id="rTf-Xp-7JJ"/>
             </connections>
             <point key="canvasLocation" x="370" y="245"/>
         </tableViewCell>

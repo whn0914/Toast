@@ -21,7 +21,7 @@
                     <rect key="frame" x="18" y="29" width="564" height="160"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UaO-5d-9ll">
-                            <rect key="frame" x="8" y="8" width="548" height="122.5"/>
+                            <rect key="frame" x="8" y="8" width="548" height="123"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             <connections>
@@ -29,7 +29,11 @@
                             </connections>
                         </textView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还剩 60 个字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uj0-ZU-ucu">
-                            <rect key="frame" x="8" y="138.5" width="64.5" height="13.5"/>
+                            <rect key="frame" x="8" y="139" width="65" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13" id="9NF-hH-7FT"/>
+                                <constraint firstAttribute="width" constant="65" id="TpH-Mw-BUe"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -53,7 +57,7 @@
                     <rect key="frame" x="18" y="188" width="564" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYc-o7-VaM">
-                            <rect key="frame" x="8" y="7.5" width="548" height="26"/>
+                            <rect key="frame" x="8" y="7" width="548" height="26"/>
                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                             <state key="normal" title="发送">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,8 +79,12 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-Oh-Fa6">
-                    <rect key="frame" x="233" y="540" width="135.5" height="52"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="136" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-Oh-Fa6">
+                    <rect key="frame" x="233" y="538" width="135" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="QbT-b3-aEh"/>
+                        <constraint firstAttribute="width" constant="135" id="VPD-eg-Utg"/>
+                    </constraints>
                     <string key="text">Designed &amp; Developed by
 SHU
 HAONAN</string>
@@ -90,13 +98,18 @@ HAONAN</string>
                 <constraint firstItem="WCO-Kf-11Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="29" id="0Np-Wj-AcX"/>
                 <constraint firstAttribute="trailing" secondItem="WCO-Kf-11Y" secondAttribute="trailing" constant="18" id="IHU-dU-YWn"/>
                 <constraint firstItem="OWb-Oh-Fa6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ibx-8E-gNb"/>
-                <constraint firstItem="OWb-Oh-Fa6" firstAttribute="top" secondItem="PTL-Ld-kgd" secondAttribute="bottom" constant="312" id="Jey-R8-hfx"/>
-                <constraint firstAttribute="bottom" secondItem="OWb-Oh-Fa6" secondAttribute="bottom" constant="8" id="PrU-ap-Y1x"/>
+                <constraint firstItem="OWb-Oh-Fa6" firstAttribute="top" secondItem="PTL-Ld-kgd" secondAttribute="bottom" constant="310" id="Jey-R8-hfx"/>
                 <constraint firstItem="PTL-Ld-kgd" firstAttribute="top" secondItem="WCO-Kf-11Y" secondAttribute="bottom" constant="-1" id="ZEj-ov-zad"/>
+                <constraint firstAttribute="bottom" secondItem="OWb-Oh-Fa6" secondAttribute="bottom" constant="8" id="Zc4-Kc-H8M"/>
                 <constraint firstItem="WCO-Kf-11Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="aWf-UM-24b"/>
                 <constraint firstItem="PTL-Ld-kgd" firstAttribute="width" secondItem="WCO-Kf-11Y" secondAttribute="width" id="dsl-L1-dxJ"/>
                 <constraint firstItem="PTL-Ld-kgd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fiT-9w-RC4"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Jey-R8-hfx"/>
+                </mask>
+            </variation>
             <connections>
                 <action selector="backgroundTap:" destination="-1" eventType="touchDown" id="9eR-34-3zu"/>
             </connections>

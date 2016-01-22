@@ -99,7 +99,6 @@ static NSString *ListViewCellIdentifier = @"ListViewCellIdentifier";
 
 // 刷新数据
 - (void)loadNewData {
-    [self.dataList removeAllObjects];
     [self loadData:YES];
 }
 
@@ -127,6 +126,9 @@ static NSString *ListViewCellIdentifier = @"ListViewCellIdentifier";
                 BOOL res = [TopRequest execute:url params:params callback:^(ResponseBody *response) {
                     if(response.error == nil && [response.code intValue] == 1) {
                         NSDictionary *dic = [Utils dictionaryWithJsonString:response.text];
+                        if(isRefresh) {
+                            [self.dataList removeAllObjects];
+                        }
                         [self.dataList addObjectsFromArray:dic[@"data"]];
                         self.currentPage++;
                         [self.tableView reloadData];

@@ -11,7 +11,7 @@
 
 #define REQUEST_CALLBACK void (^)(ResponseBody *response)
 
-#define API_BASE_URL @"http://192.168.0.136:5000"
+#define API_BASE_URL @"http://218.244.132.65:5001"
 
 #define ADD_USER @"/addUser"
 
