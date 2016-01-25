@@ -62,6 +62,7 @@
     if([self.trumpetButton isSelected]) {
         return;
     }
+    [self.trumpetButton setSelected:YES];
     NSString *uid = [[NSUserDefaults standardUserDefaults] objectForKey:@"TOAST_UID"];
     NSString *url = [API_BASE_URL stringByAppendingString:TRUMPET];
     NSDictionary *params = @{@"uid":uid, @"toastId":self.toastId};
@@ -92,6 +93,7 @@
     if([self.shitButton isSelected]) {
         return;
     }
+    [self.shitButton setSelected:YES];
     NSString *uid = [[NSUserDefaults standardUserDefaults] objectForKey:@"TOAST_UID"];
     NSString *url = [API_BASE_URL stringByAppendingString:SHIT];
     NSDictionary *params = @{@"uid":uid, @"toastId":self.toastId};
